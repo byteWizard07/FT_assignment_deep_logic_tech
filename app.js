@@ -7,10 +7,6 @@ app.set('views','./view')
 app.set('view engine','ejs');
 
 
-app.get('/',(req,res)=>{
-    res.render('home')
-})
-
 app.get('/geturl',(req,res)=>{
     res.render('view',{data:jsonData})
 })
